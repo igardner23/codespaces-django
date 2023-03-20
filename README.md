@@ -11,3 +11,12 @@ To run this application:
 ```python
 python manage.py runserver
 ```
+
+Okay so this is beautiful, this is what I'm starting with right here. 
+
+This is going to be the rest API, I should pull up rest framework documentation.
+
+
+Okay, so a bit of a mess throughout the project, got a lot of things going here, might want to cut down a bit. Not sure I'm going to need celery for anything yet, but actually I think that was a good call and I should stick with it. 
+
+I can actually knock this out now, I just need to go back in, check in on the bunk thing, and then get rolling with my plans, I can refer to everything in the documentation (trello) and also should bring up a chatgpt window. 

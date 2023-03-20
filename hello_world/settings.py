@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-rc@04_mry_3-$@2sq$b9%-9jp6q2eyxf4bsw9&&esj++aw&r)p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 if 'CODESPACE_NAME' in os.environ:
     codespace_name = os.getenv("CODESPACE_NAME")
@@ -34,7 +39,12 @@ if 'CODESPACE_NAME' in os.environ:
 
 # Application definition
 
+ASGI_APPLICATION = "hello_world.asgi.application"
 INSTALLED_APPS = [
+    'daphne',
+    'hello_world',
+    'hello_world.core',
+    'django_celery_results',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -42,7 +52,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_browser_reload",
+    "rest_framework"
 ]
+
+#CELERY CONFIG
+CELERY_RESULT_BACKEND = 'django-db'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

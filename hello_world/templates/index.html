@@ -1,26 +1,38 @@
 {% load django_browser_reload %}
 {% load static %}
-
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
-    </div>
+
+    <div class="w3-half">
+        <form class="w3-container w3-card-4">
+          <h2>Empathetic Message Analysis</h2>
+          <div class="w3-section">
+            <h4> Medium of Communication </h4>
+            <input class="w3-check" type="checkbox" required>
+            <label>Medium</label>
+          </div>
+          <div class="w3-section">      
+            <input class="w3-input" type="text" required>
+            <label>Please Describe Message Context</label>
+          </div>
+          <div class="w3-section">      
+            <input class="w3-input" type="text" required>
+            <label>Please Describe Relation to Writer</label>
+          </div>
+        
+          <div class="w3-row">
+          <div class="w3-half">
+            <br><br>
+          </div>
 </body>
 
 </html>
