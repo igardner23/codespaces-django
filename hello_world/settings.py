@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     #'daphne', # Temporarily removed, until I decide to configure it, will this even need channels? Maybe? 
     'hello_world',
     'hello_world.core',
-    'django_celery_results',
+    #'django_celery_results',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_browser_reload",
-    "rest_framework"
+    #"rest_framework"
 ]
 
 #CELERY CONFIG
