@@ -41,7 +41,7 @@ if 'CODESPACE_NAME' in os.environ:
 
 ASGI_APPLICATION = "hello_world.asgi.application"
 INSTALLED_APPS = [
-    'daphne',
+    #'daphne', # Temporarily removed, until I decide to configure it, will this even need channels? Maybe? 
     'hello_world',
     'hello_world.core',
     'django_celery_results',
